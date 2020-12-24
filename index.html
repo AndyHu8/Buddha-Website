@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddhismus - Documentation</title>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/png" href="Picture/buddha.png">
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.5.7/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<style>
+body {padding: 0; margin: 0;}
+.uk-navbar-container {position: fixed; width: 100%; z-index: 1;}
+
+/*Home*/
+#home {background-image: url(Picture/wallpaper.jpg); background-repeat: no-repeat; background-size:100%;}
+#home_text img {width: 10%;}
+#home_text h2 {color:white;}
+#home_text hr {width: 5%; margin-left: 48%;}
+#home_text {text-align: center; padding-top: 15%; color:white; text-shadow: 1px 1px black; font-size: 25px;}
+
+/*Buddhist werden*/
+#buddhistWerden img {float:right; width: 20%; margin-left: 2%;}
+
+/*Symbole*/
+#dasRadDesDharmaBild {float: left; width: 8%;}
+#derEwigeKnotenBild {float: right; width: 8%;}
+#dieLotusblumeBild {float: left; width: 8%;}
+#derBodhibaumBild {float: right; width: 8%;}
+#dieAugenBuddhasBild {float: left; width: 8%; margin-right: 2%;}
+#derBuddhaBild {float: right; width: 8%; margin-left: 2%;}
+
+/*Mehr*/
+#up_arrow {width: 2%; margin-left: 1%;}
+#sm_div {display: flex; text-align: center; justify-content: center; align-items: center;}
+#socialMedia {display: flex; text-align: center; justify-content: center; align-items: center;}
+#socialMedia li {float: left; margin-left: 1%; list-style: none;}
+
+/*Footer*/
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 12px;
+    bottom: 0px;
+    width: 100%;
+    height: 60px;
+    background-color: #1a1a1a;
+    vertical-align: middle;
+  }
+
+  #favicon {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 12px;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #121212;
+  vertical-align: middle;
+}
+
+#freepik_link:hover {color: deepskyblue; transition: 0.5s;}
+#flaticon_link:hover {color: deepskyblue; transition: 0.5s;}
+
+@media only screen and (max-width: 778px) {
+#navbar_real {display: none;}
+
+/*HOME*/
+#home_text h2 {font-size: 100%;}
+#home_text hr {width: 5%; margin-left: 48%;}
+#home_text {text-align: center; padding-top: 15%; color:white; text-shadow: 1px 1px black; font-size: 20px;}
+
+/*ERKLÄRUNG*/
+#erklärung h3 {font-size: 100%;}
+#erklärung p {font-size: 80%;}
+
+/*BUDDHIST WERDEN*/
+#buddhistWerden h3 {font-size: 100%;}
+#buddhistWerden p {font-size: 80%;}
+
+/*VIER WAHRHEITEN*/
+#vierWahrheiten h3 {font-size: 100%;}
+#vierWahrheiten p {font-size: 80%;}
+
+/*URSACHE LEIDEN*/
+#ursacheLeiden h3 {font-size: 100%;}
+#ursacheLeiden p {font-size: 80%;}
+
+/*BEGRIFFE*/
+#begriffe h3 {font-size: 100%;}
+#textfeld {font-size: 80%;}
+
+/*SYMBOLE*/
+#symbole h3 {font-size: 100%;}
+#symbole p {font-size: 80%;}
+
+/*BUDDHA STATUEN*/
+#buddhaStatuen h3 {font-size: 100%;}
+#textfeld2 {font-size: 80%;}
+
+/*MEHR*/
+#mehr h3 {font-size: 100%;}
+#mehr p {font-size: 80%;}
+
+/*FOOTER*/
+#favicon p {font-size: 80%;}
+footer p {font-size: 80%;}
+
+}
+</style>
+<!--UIkit (CSS Framework)-->
+<body>
+    <nav id="navbar_real" class="uk-navbar-container" uk-navbar>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li class="uk-button uk-button-text"><a href="#home">Home</a></li>
+                <li class="uk-button uk-button-text"><a href="#erklärung">Erklärung</a></li>
+                <li class="uk-button uk-button-text"><a href="#buddhistWerden">Buddhist werden</a></li>
+                <li class="uk-button uk-button-text"><a href="#vierWahrheiten">4 Wahrheiten</a></li>
+                <li class="uk-button uk-button-text"><a href="#ursacheLeiden">Ursache (Leiden)</a></li>
+                <li class="uk-button uk-button-text"><a href="#begriffe">Begriffe</a></li>
+                <li class="uk-button uk-button-text">
+                    <a href="#symbole">Symbole</a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#dasRadDesDharmaText">Rad des Dharma</a></li>
+                            <li><a href="#derEwigeKnotenText">Der ewige Knoten</a></li>
+                            <li><a href="#dieLotusblumeText">Die Lotusblume</a></li>
+                            <li><a href="#derBodhibaumText">Der Bodhi-Baum</a></li>
+                            <li><a href="#dieAugenBuddhasText">Die Augen Buddhas</a></li>
+                            <li><a href="#derBuddhaText">Der Buddha</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="uk-button uk-button-text"><a href="#buddhaStatuen">Buddha-Statuen</a></li>
+                <li class="uk-button uk-button-text"><a href="#mehr">More</a></li>
+            </ul>
+        </div>
+    </nav>
+
+      <section id="home">
+         <div id="home_text">
+             <img src="Picture/buddha.png" alt="Buddha Icon">
+            <h2>Buddhismus</h2>
+            <hr>
+            <p><i>Eine Religion ohne Gott.</i></p>
+         </div>
+      </section>
+            
+      <section id="erklärung" class="w3-container">
+            <h3>Was ist Buddhismus?</h3>
+            <p>Nach Buddha haben Erfahrungen und Geschehnisse ihre Ursachen nicht nur in diesem Leben, sondern auch in früheren Existenzen. Entsprechend wirken Gedanken, Rede und Handlung auch in die Zukunft – das sogenannte Karma-Prinzip. Damit lässt sich auch erklären, warum die inneren und äußeren Umstände der Menschen so unterschiedlich sind. Buddhismus ist eine Religion, unterscheidet sich aber wesentlich von den sogenannten Glaubensreligionen wie Christentum, Judentum oder Islam. Wie auch Hinduismus und Taoismus ist Buddhas Lehre eine Erfahrungsreligion. Ziel ist die Entwicklung des eigenen Geistes, die "Buddha-Natur" zu erlangen. Damit ist gemeint, dass in jedem Menschen die Fähigkeit zur Erleuchtung bereits vorhanden ist. Der Weg dorthin führt über Selbstständigkeit und Eigenverantwortung des Menschen. Im Buddhismus gibt es daher wenig Vorschriften von außen. Buddhas Belehrungen sollen bewusst hinterfragt und durch die eigenen Erfahrung überprüft werden.</p>
+      </section>
+
+      <section id="buddhistWerden" class="w3-container">
+        <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-medium">
+                <h3>Wie wird man Buddhist?</h3>
+        <p><img src="Picture/buddh_werden.jpg" alt="Buddhist werden">In einem kleinen Ritual nimmt man Zuflucht zu Buddha, Dharma (der Lehre) und Sangha (der spirituellen Gemeinschaft). Sie werden auch die drei Juwelen genannt. Zufluchtnahme bedeutet, den Weg des Buddha zu gehen und seiner Lehre zu folgen. Wir brauchen eine Zuflucht, die außerhalb von Samsara liegt, dem Kreislauf von Tod und Wiedergeburt. Andere Menschen können nie Zuflucht bieten, weil sie selber noch in diesem Kreislauf und ihren Konzepten gefangen sind. In der Regel ist die Zuflucht mit einer Verpflichtung auf die sogenannten fünf Silas verknüpft. Sie lauten:<br>
+            1. Kein Lebewesen zu töten oder zu verletzen<br>
+            2. Nichtgegebenes nicht zu nehmen<br>
+            3. Keine unheilsamen sexuellen Beziehungen zu pflegen und sich im rechten Umgang mit den Sinnen zu üben<br>
+            4. Nicht zu lügen oder unheilsam zu reden<br>
+            5. Das Bewusstsein nicht durch berauschende Mittel zu trüben</p>
+            </div>
+        </div>
+      </section>
+
+      <section id="vierWahrheiten" class="w3-container">
+        <div class="uk-animation-toggle" tabindex="0">
+            <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left-medium">
+            <h3>Die 4 edlen Wahrheiten</h3>
+            <p>Buddha hat die Essenz seiner Lehre im Grunde in den "Vier Edlen Wahrheiten" zusammengefasst. Sie sollen helfen, das Leben zu durchschauen und zu bewältigen.<br>
+                1. Was ist das Leiden?
+                Es gibt drei Arten von Leiden: Leid des Leidens, Leid der Veränderung, Leid der Bedingtheit. Das Leben selbst ist Leiden: Geburt, Arbeit, Trennung, Alter, Krankheit, Tod.<br>
+                2. Wie entsteht das Leiden?
+                Durch Unwissenheit, Egoismus, Anhaftung, Abneigung und Furcht.<br>
+                3. Wie kann das Leiden überwunden werden?
+                Durch Aufgeben des Begehrens. Nur so wird neues Karma, die Folge von guten wie bösen Taten, vermieden.<br>
+                4. Auf welchem Weg soll dies erreicht werden?
+                Auf dem Weg der vernünftigen Mitte - weder Genusssucht noch Selbstzüchtigung. Der berühmte achtfache Pfad zum Nirwana besteht in: rechte Erkenntnis und Gesinnung, rechte Rede, rechtes Handeln und Leben, rechte Anstrengung, Achtsamkeit und Sammlung.</p>
+            </div>
+        </div>
+      </section>
+
+      <section id="ursacheLeiden" class="w3-container">
+            <h3>Was ist die Ursache für Leiden</h3>
+            <p>Unsere Unwissenheit und das Nichtverstehen der wahren Natur der Dinge ist die Ursache allen Leidens. Aber was verstehen wir nicht? Unser ungeübter Geist ist unfähig wahrzunehmen, dass Seher, Gesehenes und Sehen sich gegenseitig bedingen. Sie existieren nicht unabhängig voneinander und auch nicht alleine aus sich heraus. Buddhas Erklärungen decken sich übrigens mit den Erkenntnissen der Relativitätstheorie und Quantentheorie, nach denen die Eigenschaften der Materie abhängig vom Beobachter ist. Es ist das Dilemma der Subjektivität der Erkenntnis. Durch diese Unwissenheit entsteht die Erfahrung von Dualität. Wir teilen die Welt in "Ich"-Innenwelt und "Du"-Außenwelt. Obwohl die Dinge sich ständig verändern, halten wir an unserer Vorstellung fest, dass sie wirklich, beständig und von uns getrennt sind.</p>
+      </section>
+
+      <section id="begriffe" class="w3-container">
+            <h3>Begriffe im Buddhismus - Slideshow</h3>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="Picture/samsara.jpg" alt="Samsara" onclick="myFunctionSamsara()" style="cursor: pointer;" uk-cover>
+                    </li>
+                    <li>
+                        <img src="Picture/karma.jpg" alt="Karma" onclick="myFunctionKarma()" style="cursor: pointer;" uk-cover>
+                    </li>
+                    <li>
+                        <img src="Picture/lebensrad.jpeg" alt="Reinkarnation" onclick="myFunctionReink()" style="cursor: pointer;" uk-cover>
+                    </li>
+                </ul>
+    
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    
+            </div>
+            <h3>Bedeutung der Begriffe - Bitte auf das obige Bild klicken!</h3>
+            <p id="textfeld"></p>
+    </section>
+
+    <section id="symbole" class="w3-container">
+        <h3>Symbole im Buddhismus</h3>
+        <p id="dasRadDesDharmaText"><img src="Picture/radDesDharma.svg" alt="Das Rad des Dharma" id="dasRadDesDharmaBild">Das Rad des Dharma. Das Rad des Dharma ist auch als Rad des Lebens oder Dharma-Chakra bekannt. Es repräsentiert den edlen achtfachen Pfad, den der Buddha seinen Schülern gelehrt hat. Der edle achtfache Pfad ist eine Anleitung, wie sie die Erleuchtung, das Nirwana, erlangen und letztlich die Befreiung aus dem Zyklus von Wiedergeburten und den Eintritt in das Para-Nirwana. Das Dharma-Rad ist mittlerweile zum universellen Symbol für den Buddhismus geworden. Das Rad des Lebens hat acht Speichen, die den edlen achtfachen Pfad des Buddha darstellen. In Tibet wird es auch als Rad der Transformation bezeichnet.</p>
+        <hr>
+        <p id="derEwigeKnotenText"><img src="Picture/ewigeKnoten.jpg" alt="Der ewige Knoten" id="derEwigeKnotenBild">Der Ewige Knoten. Die Verflechtung von Linien im ewigen Knoten, auch unendlicher Knoten genannt, hat weder ein Anfang noch ein Ende. Er symbolisiert die Unendlichkeit Buddhas Weisheit und Mitgefühl. Außerdem stellt er sinnbildlich dar, dass die materielle und die spirituelle Welt untrennbar miteinander verbunden sind. Dieser Knoten ist nicht nur ein Symbol für die Verbindung zwischen Diesseits und Jenseits, sondern auch für die Beziehung zwischen uns Menschen. Er erinnert uns daran, dass wir keine isolierten Einzelkämpfer, sondern Teil des Ganzen sind. Der ewige Knoten wird auch verwendet, um zu zeigen, dass die spirituelle Praxis nicht vom weltlichen Leben zu trennen ist und Weisheit und Mitgefühl miteinander einhergehen.</p>
+        <hr>
+        <p id="dieLotusblumeText"><img src="Picture/lotusblume.jpg" alt="Die Lotusblume" id="dieLotusblumeBild">Die Lotusblume. Die Lotusblume repräsentiert die ursprüngliche Reinheit des Körpers, der Sprache und des Geistes. Die Blüte schwebt über dem trüben Wasser und wurzelt im schlammigen Boden, welcher negative Emotionen wie Anhaftung und Verlangen repräsentiert. Die Lotusblume wird in vielen Lehren des Buddhismus verwendet, um die wahre Natur der Menschheit darzustellen. Die Wurzeln des Lotos stecken tief im Schlamm, die Pflanze wächst in trübem Wasser und an der Wasseroberfläche blüht schließlich eine zarte Blüte mit einem angenehm süßlichen Duft. Der Lotus veranschaulicht die Art und Weise, wie wir spirituell wachsen und uns allmählich über unser Leiden erheben, um Erleuchtung, Schönheit und Klarheit zu erlangen. Die Lotusblüte gibt es in verschiedenen Farben, die jeweils verschiedene Bedeutungen haben. Ein rosaroter Lotus repräsentiert den traditionellen Buddha. Purpur steht für Mystik, Rot für Liebe und Mitgefühl, und Blau für Weisheit. Ein weißer Lotus symbolisiert Spiritualität und einen klaren Geist.</p>
+        <hr>
+        <p id="derBodhibaumText"><img src="Picture/bodhibaum.jpg" alt="Der Bodhi-Baum" id="derBodhibaumBild">Der Bodhi-Baum. Der Bodhi-Baum symbolisiert den ursprünglichen Baum in Bodh Gaya in Indien, wo Siddhartha Gautama sich einst hinsetzte, um zu meditieren, bis er die Erleuchtung erlangte und zum Buddha wurde. Er repräsentiert die Hingabe und Entschlossenheit zur meditativen Versenkung, mit der Buddhisten die Erleuchtung erreichen können. Ein Nachkömmling dieses originalen Bodhi-Baums steht noch heute in Bodh Gaya. Viele Mönche und Reisende kommen ihn besuchen, um in seinem Schatten zu meditieren und sich inspirieren zu lassen.</p>
+        <hr>
+        <p id="dieAugenBuddhasText"><img src="Picture/dieAugenBuddhas.jpg" alt="Die Augen Buddhas" id="dieAugenBuddhasBild">Die Augen Budhhas. Die Augen des Buddhas werden auch als „Augen der Weisheit" bezeichnet und sind oft auf den Seiten von Stupas, buddhistischen Schreinen, zu finden. Diese Augen Buddhas sind ein Symbol für die Präsenz des göttlichen Bewusstseins in allem, was existiert. Die Wellenlinie in der Mitte der Augen ist das Sanskrit-Symbol für die Zahl 1 und symbolisiert die Einheit aller Dinge. Der Punkt zwischen den beiden Augen ist das dritte Auge und symbolisiert wahres spirituelles Erwachen.</p>
+        <hr>
+        <p id="derBuddhaText"><img src="Picture/derBuddha.jpg" alt="Der Buddha" id="derBuddhaBild">Der Buddha. Siddharta Gautama selbst wollte keine Abbilder von sich haben. Der Buddha, wie wir ihn alle kennen, ist kein Symbol für die Anbetung. Denn Buddha ist kein Gott, sondern ein Mensch, der durch den achtfachen edlen Pfad die Erleuchtung erlangt hat. Bilder und Figuren des Buddha sollen nicht zum Götzendienst einladen, sondern uns an das Potenzial der Erleuchtung und der Buddhaschaft erinnern, das in jedem von uns existiert. Viele Buddhisten tragen Armbänder oder Halsketten mit buddhistischen Symbolen am Körper oder stellen Figuren und Symbole in ihrem Wohnraum auf, um im Alltag an die tiefe spirituelle Bedeutung dieser Symbole erinnert zu werden. Jetzt kennst auch du einige der Symbole des Buddhismus und kannst dir sicherlich leicht merken, für was sie stehen.</p>
+    </section>
+
+    <section id="buddhaStatuen" class="w3-container">
+        <h3>Die Buddha-Statuen - Slideshow</h3>
+
+        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
+
+            <ul class="uk-slideshow-items">
+                <li>
+                    <img src="Picture/gautama.jpg" alt="Siddhartha Gautama" onclick="myFunctionGautama()" style="cursor: pointer;" uk-cover>
+                </li>
+                <li>
+                    <img src="Picture/milefo.jpg" alt="Maitreya" onclick="myFunctionMaitreya()" style="cursor: pointer;" uk-cover>
+                </li>
+                <li>
+                    <img src="Picture/guanyin.jpg" alt="Guanyin" onclick="myFunctionGuanyin()" style="cursor: pointer;" uk-cover>
+                </li>
+            </ul>
+
+            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+        </div>
+        <h3>Bedeutung der Buddhas - Bitte auf das obige Bild klicken!</h3>
+        <p id="textfeld2"></p>
+    </section>
+
+    <section id="mehr" class="w3-container">
+        <h3>Mehr vom Thema: Buddhismus</h3>
+        <p>Falls du mehr über das Thema: Buddhismus erfahren willst, kannst du weiter das Internet durchstöbern oder aber hier eine Zusammenfassung auf YouTube anschauen. Wenn dir diese Website gefallen hat, kannst du mir gerne ein Feedback auf den Social Media Kanälen geben.</p>
+        <div id="sm_div">
+            <ul id="socialMedia">
+                <li><a class="uk-button uk-button-secondary" href="https://github.com/AndyHu8">Github</a></li>
+                <li><div uk-lightbox>
+                    <a class="uk-button uk-button-danger" href="https://www.youtube.com/watch?v=jopCI5EeTOo" data-caption="YouTube">YouTube</a>
+                 </div></li>
+                 <li><a class="uk-button uk-button-secondary" href="https://www.instagram.com/_hulong/">Instagram</a></li>
+            </ul>
+        </div>
+    </section>
+    <a href="#target" uk-scroll><img id="up_arrow" src="Picture/up-arrow.png" alt="Scroll Up"></a>
+    <div id="favicon">
+        <p><i>Icons erstellt von <a id="freepik_link" href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a id="flaticon_link" href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></i></p>
+    </div>
+    <footer>
+            <p><i>Hulong 2020 - Web-Developer</i></p>
+    </footer>
+
+     <script>
+        function myFunctionSamsara()
+        {
+          document.getElementById("textfeld").innerHTML = "Was ist Samsara? Nach buddhistischer Vorstellung befinden sich alle Lebewesen in einem Kreislauf von Existenzen, von Tod und Widergeburt, dem Samsara. Ursache dafür ist das Karma. Gute wie schlechte Handlungen, die wir auf Grund des vollkommen unreinen Zustands unseres Geistes ausführen, sind dabei Ursache und Folge der Wiedergeburten. Wenn der Geist von allem Karmischen gereinigt ist und kein neues Karma mehr entsteht, ist die Erleuchtung erreicht. Im Nirvana gibt es weder Tod noch Wiedergeburt. Der Geist hat sich aus dem samsarischen Kreislauf gelöst.";
+        }
+        function myFunctionKarma()
+        {
+          document.getElementById("textfeld").innerHTML = " Was bedeutet Karma? Karma bedeutet Handlung, wobei der Buddhismus drei Handlungen unterscheidet: die des Körper, die der Rede und die des Geistes. Alle Formen des menschlichen Handelns erzeugen Prägungen, die wiederum die Basis zukünftigen Handelns und Erfahrens sind. Der Begriff des Karma ist eng mit dem Konzept der Wiedergeburt verknüpft. Unsere Taten können gutes oder schlechtes Karma hervorrufen oder karmisch gesehen neutral sein. Entscheidend dafür ist die Motivation mit der eine Handlung ausgeführt wird. Gutes Karma führt zu günstigen Bedingungen im aktuellen Leben oder zu einer Wiedergeburt in angenehmen menschlichen Verhältnissen, beziehungsweise in der Göttersphäre. Schlechtes Karma führt dagegen zu einer Wiedergeburt unter negativen Umständen, zum Beispiel auch als Tier oder Dämon. Gute Taten füllen zwar den Geist mit guten Eindrücken auf und deshalb sollte man möglichst viele gute Taten ausführen. Solange wir aber mit unserem Ego die Welt dualistisch sehen, bleibt die Wirkung jeder Handlung begrenzt.";
+        }
+        function myFunctionReink()
+        {
+          document.getElementById("textfeld").innerHTML = "Was bedeutet Reinkarnation? Wiedergeburt bedeutet, dass der menschliche Geist nach dem Tod auf dieser Erde oder anderen Existenzbereichen in einem neuen Körper als empfindendes Wesen wiedergeboren wird. Die Buddhisten glauben an ein Geist-Kontinuum, das viele Leben durchläuft. Deshalb wirkt Karma nicht nur im jetzigen Leben, sondern auch ins nächste hinein. Umgekehrt sind wir im jetzigen Leben Bedingungen ausgesetzt, die durch unser Karma in vorherigen Leben erzeugt wurden.";
+        }
+        /*********************/
+        function myFunctionGautama()
+        {
+            document.getElementById("textfeld2").innerHTML = "Siddhartha Gautama (Der historische Buddha). Siddharta Gautama ist der Begründer des Buddhismus. Laut Überlieferung gelangte er im Alter von rund 35 Jahren in einer Meditation unter einem Feigenbaum zur Erkenntnis aller Dinge. Als Erleuchteter gilt er als der erste Buddha. Siddharta Gautama und seine Anhänger erzählten den Menschen davon, wie sie sich von allem Leid befreien und in Frieden leben konnten. Dabei half auch sein Sohn Rahula. Das war vor rund 2500 Jahren. Inzwischen ist der Buddhistische Glaube sehr verbreitet – vor allem in Asien. Mit 80 Jahren starb Siddharta in Kushinagara an einer Lebensmittelvergiftung. Buddhisten glauben, dass es ihm gelang, nach dem seinem Tod aus dem Kreislauf der Wiedergeburten auszutreten und ins Nirvana zu gelangen.";
+        }
+        function myFunctionMaitreya()
+        {
+            document.getElementById("textfeld2").innerHTML = "Maitreya (Der lachende Buddha). Die Statue des Lachenden Buddha befindet sich in chinesischen Klöstern in der Halle der vier Himmelskönige. Dort wird er, zumeist von einer Kinderschar umgeben, oft mit dickem nacktem Bauch, gerunzelter Stirn und mit breitem Lachen in sitzender Körperhaltung (das rechte Bein aufgestellt) dargestellt. Diese Figur verkörpert einige chinesische Lebensideale. Der dicke Wanst ist ein Symbol für Reichtum. Das Lachen und die lockere Sitzhaltung symbolisiert Gelassenheit und Zufriedenheit mit sich und der Welt. Die die Statue umgebenen Kinder weisen auf eine der chinesischen Haupttugenden hin: Kinderliebe.";
+        }
+        function myFunctionGuanyin()
+        {
+            document.getElementById("textfeld2").innerHTML = "Guanyin (Bodhisattva des Mitgefühls). In Weiß gehüllt, auf einer Lotusblüte stehend, in einer Hand ein Weidenzweig, in der anderen ein Gefäß mit reinem Wasser – Boddhisattva Guan Yin ist eine Göttin der Gnade und der Barmherzigkeit. „Sie, die alle Töne des Leidens in der Welt beachtet“ – das ist die Bedeutung des Namens Guan Yin. Und der Titel Bodhisattva bezieht sich auf eine Ebene spiritueller Verwirklichung über dem Arhat und unterhalb des Buddhas. Legenden über Guan Yin tauchten zuerst im Reich der Mitte auf, vor mehr als zweitausend Jahren. Ihre Popularität stieg explosionsartig in der Zeit der Song-Dynastie (960 – 1279), und sie wird noch heute umjubelt und angebetet als „Göttin der Gnade“.";
+        }
+        </script>
+</body>
+</html>
